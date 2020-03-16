@@ -1,0 +1,12 @@
+[submodule "bundle/all/mucomplete"]
+	path = bundle/all/mucomplete
+	url = git@github.com:lifepillar/vim-mucomplete.git
+[submodule "bundle/all/clang-complete"]
+	path = bundle/all/clang-complete
+	url = git@github.com:xavierd/clang_complete
+[submodule "bundle/all/monokai"]
+	path = bundle/all/monokai
+	url = git@github.com:sickill/vim-monokai.git
+[submodule "bundle/all/lightline"]
+	path = bundle/all/lightline
+	url = git@github.com:itchyny/lightline.vim.git
