@@ -1,14 +1,25 @@
-execute pathogen#interpose('/bundle/cpp/clang-complete')
+" load syntax-specific packages via pathogen
+" execute pathogen#interpose('/bundle/cpp/clang-complete/')
 
-set noinfercase
-set completeopt-=preview
-set completeopt+=menuone,noselect
-" The following section allows for autocompletion fo functions and the stdlib
-" using clang_completions with mucomplete.
+" Set width to 80
+set colorcolumn=80
+
+" Clang-complete settings
 let g:clang_library_path = '/usr/lib/llvm-9/lib'
 let g:clang_user_options = '-std=c++11'
 let g:clang_complete_auto = 1
-let g:mucomplete#enable_auto_at_startup = 1
+
+" Use spaces instead of tabs, and cast tab
+" as 4 spaces
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+
+" Completions / mucomplete settings
+set noinfercase
+set completeopt-=preview
+set completeopt+=menuone,noselect
 
 echo 'file loaded my duder'
 
