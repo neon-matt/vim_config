@@ -10,3 +10,6 @@
 [submodule "bundle/all/lightline"]
 	path = bundle/all/lightline
 	url = git@github.com:itchyny/lightline.vim.git
+[submodule "bundle/all/jedi-vim"]
+	path = bundle/all/jedi-vim
+	url = git@github.com:davidhalter/jedi-vim.git

@@ -6,8 +6,7 @@ autocmd FileType * if isdirectory('/home/matthew/.vim/bundle/' . &ft) | execute 
 
 " Setup mucomplete for basic use (more complex configuration/plugin integration for different file types are done
 " in the ftplugin vim scripts)
-set completeopt+=menuone
-set completeopt+=noselect
+set completeopt+=menuone,noselect
 set shortmess+=c   " Shut off completion messages
 set belloff+=ctrlg " If Vim beeps during completion
 let g:mucomplete#enable_auto_at_startup = 1
