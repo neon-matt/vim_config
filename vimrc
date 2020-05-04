@@ -25,12 +25,16 @@ filetype plugin on
 filetype indent on
 
 " DISPLAY AND SPELLING
-set termguicolors
+set termguicolors 	" true color support
+
+" this is a weird fix that allows for true color inside tmux
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
 " make sure that the appropriate colorscheme is symlinked at
 " ~/.vim/bundle/colorscheme/__active
 colorscheme gruvbox
-set background=dark 		" gives us the dark gruvbox theme
+set background=dark 	" gives us the dark gruvbox theme
 
 " cursor view configuration
 set number relativenumber 	" turn on "hybrid" numbering mode
