@@ -13,3 +13,15 @@
 [submodule "bundle/all/jedi-vim"]
 	path = bundle/all/jedi-vim
 	url = git@github.com:davidhalter/jedi-vim.git
+[submodule "bundle/all/gruvbox"]
+	path = bundle/all/gruvbox
+	url = git@github.com:morhetz/gruvbox.git
+[submodule "bundle/all/badwolf"]
+	path = bundle/all/badwolf
+	url = git@github.com:sjl/badwolf
+[submodule "bundle/all/vim-colors-solarized"]
+	path = bundle/all/vim-colors-solarized
+	url = git@github.com:altercation/vim-colors-solarized
+[submodule "bundle/all/jellybeans"]
+	path = bundle/all/jellybeans
+	url = git@github.com:nanotech/jellybeans.vim
