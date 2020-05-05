@@ -1,20 +1,12 @@
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Setup Vim for general editing. Settings here are applied for all files 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" anything sensible here will do.
-let mapleader=","
 
-" VIMRC FANCINESS
-" map ,vimrc to edit this file. 
-map <leader>vimrc :tabe ~/.config/vim/vimrc<cr>
-
-" auto-source the vimrc on write.
-autocmd bufwritepost vimrc source $MYVIMRC
 
 " load packages from ~/.vim/bundle/always/{}
 execute pathogen#infect('bundle/always/{}')
+
+" anything sensible here will do.
+let mapleader=","
 
 " FT-SPECIFIC CONFIG
 " load filetype plugins if they exist
@@ -24,8 +16,8 @@ filetype on
 filetype plugin on
 filetype indent on
 
-" DISPLAY AND SPELLING
-set termguicolors 	" true color support
+" DISPLAY SETTINGS
+set termguicolors 			" true color support
 
 " this is a weird fix that allows for true color inside tmux
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
@@ -34,22 +26,36 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 " make sure that the appropriate colorscheme is symlinked at
 " ~/.vim/bundle/colorscheme/__active
 colorscheme gruvbox
-set background=dark 	" gives us the dark gruvbox theme
+set background=dark 			" gives us the dark gruvbox theme
 
 " cursor view configuration
-set number relativenumber 	" turn on "hybrid" numbering mode
-set cursorline 			" turn on cursorline highlighting
-syntax on 			" turn on syntax highlighting
+set number relativenumber 		" turn on "hybrid" numbering mode
+set cursorline 				" turn on cursorline highlighting
+syntax on 				" turn on syntax highlighting
 
-" spelling
-set spell 		" turn on spell checking
-set spelllang=en_us 	" set the spell language
+" VIMRC FANCINESS
+" map ,vimrc to edit this file. 
+map <leader>vimrc :tabe ~/.config/vim/vimrc<cr>
 
-" PACKAGE-SPECIFIC
+" auto-source the vimrc on write.
+autocmd bufwritepost vimrc source $MYVIMRC
+
+" SPELLING AND HUMAN LANGUAGE
+set spell 				" turn on spell checking
+set spelllang=en_us 			" set the spell language
+
+" PACKAGE-SPECIFIC CONFIG
 " lightline
 set laststatus=2
 set noshowmode
 let g:lightline = {
 	\ 'colorscheme': 'gruvbox',
 	\ }
+" vimwiki
+let g:vimwiki_list = [{'path': '~/Documents/vimwiki/',
+		     \ 'syntax': 'markdown',
+		     \ 'ext': '.wiki'}]
+
+let g:vimwiki_global_ext = 0
+
 

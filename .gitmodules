@@ -25,3 +25,6 @@
 [submodule "bundle/all/jellybeans"]
 	path = bundle/all/jellybeans
 	url = git@github.com:nanotech/jellybeans.vim
+[submodule "bundle/all/vimwiki"]
+	path = bundle/all/vimwiki
+	url = git@github.com:vimwiki/vimwiki.git
