@@ -1,3 +1,3 @@
 # Global gitignore.
 view/
-
+.netrwhist
