@@ -28,3 +28,12 @@
 [submodule "bundle/all/vimwiki"]
 	path = bundle/all/vimwiki
 	url = git@github.com:vimwiki/vimwiki.git
+[submodule "bundle/all/fugitive"]
+	path = bundle/all/fugitive
+	url = git@github.com:tpope/vim-fugitive.git
+[submodule "bundle/all/surround"]
+	path = bundle/all/surround
+	url = git@github.com:tpope/vim-surround.git
+[submodule "bundle/all/sensible"]
+	path = bundle/all/sensible
+	url = git@github.com:tpope/vim-sensible.git

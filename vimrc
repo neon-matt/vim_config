@@ -1,9 +1,15 @@
-
-
-
+"               __  __ _                          __         _
+"   __ _  ___ _/ /_/ /( )___   ____    _____ ___ / /_  _  __(_)_ _  ________
+"  /  ' \/ _ `/ __/ __//(_-<  (_-< |/|/ / -_) -_) __/ | |/ / /  ' \/ __/ __/
+" /_/_/_/\_,_/\__/\__/ /___/ /___/__,__/\__/\__/\__/  |___/_/_/_/_/_/  \__/
+" 
+" Lovingly crafted to be fast, stylish, and functional.
 
 " load packages from ~/.vim/bundle/always/{}
 execute pathogen#infect('bundle/always/{}')
+
+" if there's a git repo present, load fugitive
+
 
 " anything sensible here will do.
 let mapleader=","
@@ -31,6 +37,7 @@ set background=dark 			" gives us the dark gruvbox theme
 " cursor view configuration
 set number relativenumber 		" turn on "hybrid" numbering mode
 set cursorline 				" turn on cursorline highlighting
+set colorcolumn=80 			" make our code readable anywhere
 syntax on 				" turn on syntax highlighting
 
 " VIMRC FANCINESS
@@ -52,10 +59,9 @@ let g:lightline = {
 	\ 'colorscheme': 'gruvbox',
 	\ }
 " vimwiki
-let g:vimwiki_list = [{'path': '~/Documents/vimwiki/',
+let g:vimwiki_list = [{'path': '~/documents/vimwiki/',
 		     \ 'syntax': 'markdown',
 		     \ 'ext': '.wiki'}]
 
 let g:vimwiki_global_ext = 0
-
 
